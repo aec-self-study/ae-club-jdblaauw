@@ -1,0 +1,5 @@
+I am doing this lesson in order to become an analytics engineer.
+This will help me in becoming a data engineer in the future. 
+...
+
+
