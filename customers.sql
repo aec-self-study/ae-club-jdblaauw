@@ -3,4 +3,5 @@ FROM  O2
 LEFT JOIN  ON .id = O2.customer_id
 GROUP BY 1,2,3,4
 ORDER BY first_order_at
-LIMIT 5
+LIMIT 6
+
