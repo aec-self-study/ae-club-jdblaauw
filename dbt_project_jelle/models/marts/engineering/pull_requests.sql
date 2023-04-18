@@ -31,7 +31,7 @@ final as (
 
         issue.created_at as opened_at,
         issue_merged.merged_at,
-        date_diff(issue.opened_at, issue_merged.merged_at, hour)/24 as days_open_to_merge
+        date_diff(issues.opened_at, issue_merged.merged_at, hour)/24 as days_open_to_merge
 
     from pull_requests
 

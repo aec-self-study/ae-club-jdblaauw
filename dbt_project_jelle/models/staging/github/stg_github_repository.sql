@@ -7,13 +7,15 @@ renamed as (
         id as repository_id,
         owner_id as owner_user_id,
         archived as is_archived,
+
         default_branch,
         description,
         fork as is_fork,
-        full_name,
+        full_name ,
         homepage,
         language,
         name,
+
         private as is_private,
         --timestamps
         created_at,
@@ -26,4 +28,4 @@ renamed as (
 )
 
 
-select * from renamed
+select * from
