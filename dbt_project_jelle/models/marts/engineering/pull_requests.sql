@@ -21,11 +21,11 @@ final as (
         pull_requests.pull_request_id,
         repository.name as repo_name,
         issue.number as pull_request_number,
-        cast(null as string) as type, -- (bug, eng, feature)
+        
         case 
             when pull_requests.is_draft then 'draft'
             when issue_merged.merged_at is not null then 'merged'
-            when issue.closed_at is not null then 'closed_without_merge'
+            when issue_merged.closed_at is not null then 'closed_without_merge'
             else 'open'
         end as state,
 

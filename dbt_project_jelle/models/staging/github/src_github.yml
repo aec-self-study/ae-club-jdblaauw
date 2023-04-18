@@ -20,7 +20,6 @@ sources:
               - unique
               - not_null
 
-
       - name: issue_merged
         description: ""
         columns:
