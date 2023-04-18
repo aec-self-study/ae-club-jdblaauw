@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: customers
+    columns: 
+      - name: name
+        description: customer
+        tests: 
+          - unique 
+
