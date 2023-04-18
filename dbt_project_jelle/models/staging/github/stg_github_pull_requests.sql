@@ -5,7 +5,6 @@ with source as (
 ),
 
 renamed as (
-
     select
         id as pull_request_id,
         issue_id,
@@ -24,9 +23,7 @@ renamed as (
 
         --excluded
         --_fivetran_synced,
-
     from source
-
 )
 
 select * from renamed
